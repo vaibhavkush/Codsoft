@@ -1,0 +1,511 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+header{
+    position: fixed;
+    right:0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items: center ;
+    justify-content: space-between;
+    padding: 33px 9%;
+    background: black;
+}
+.logo{
+    font-size: 30px;
+    font-weight: 700;
+    color:white;
+}
+
+.navlist{
+    
+    display: flex;
+    
+}
+
+.navlist a{
+    color:white;
+    margin-left: 60px;
+    font-size: 15;
+    font-weight: 600;
+    border-bottom:  2px solid transparent;
+    transition : all 0.55s ease;
+}
+.navlist a:hover{
+    border-bottom: 2px solid white;
+}
+
+#menu-icon{
+    color:white;
+    font-size: 35px;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+
+.hero{
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(245.59deg, #1d1d1d 0%, red);
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 2rem ;
+}
+
+section{
+    padding: 0 19%;
+}
+
+.hero-text h5{
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 25px;
+}
+
+.hero-text h1{
+    font-family: 'Courgette', cursive;
+    font-size: 65px;
+    line-height: 1;
+    color: white;
+    margin:0 0 35px;
+}
+
+.hero-text h4{
+    font-size: 18px ;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.hero-text p{
+    color:white;
+    font-size:15px;
+    line-height: 1.9;
+    margin-bottom: 25px;
+
+}
+
+.hero-img img{
+    width: 575px;
+    height: auto;
+
+}
+
+.hero-text a{
+    display: inline-block;
+    color: white;
+    background: #2B2730;
+    border: 1px solid transparent;
+    padding: 12px 30px ;
+    line-height: 1.4;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 30px;
+    text-transform: uppercase;
+    transition: all .55s ease;
+}
+.hero-text a:hover{
+    background: transparent;
+    border: 1px solid white;
+    transform: translateX(8px);
+}
+.hero-text a.ctaa{
+    background: transparent;
+    border: 1px solid white;
+    margin-left: 20px;
+}
+
+.hero-text a.ctaa i{
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.icons{
+    position: absolute;
+    top: 50%;
+    padding: 0 9%;
+    transform: translateY(-50%);
+}
+
+.icons i{
+        display: flex;
+        margin: 26px 0;
+        font-size: 24px;
+        color: white;
+        transition: all .50s ease;
+}
+
+.icons i:hover{
+    color: #98EECC;
+    transform: translateY(-5px);
+
+}
+
+.scroll-down{
+    position: absolute;
+    bottom: 6%;
+    right: 9%;
+}
+
+.scroll-down i{
+    display: block;
+    padding: 12px;
+    font-size: 25px;
+    color: white;
+    background: #000000;
+    border-radius: 30px;
+    transition: all 0.50s ease;
+}
+
+.scroll-down i:hover{
+    transform: translateY(-10px);
+}
+/*similar styling code*/
+section{
+    padding: 0 25%;
+    background: linear-gradient(245.59deg, #1d1d1d 0%, red);
+}
+section .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'algerian', cursive;
+}
+
+section .title::before{
+    content:"";
+    position:absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #aa076b;
+    transform: translateX(-50%) ;
+}
+
+section .title::after{
+    
+    position:absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 20px;
+    color: aliceblue;
+    padding: 5px;
+    background: #aa076b;
+    transform: translateX(-50%) ;
+}
+
+/* section styling about me */
+
+.about, .skills, .contact{
+    padding: 100px 0;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+
+.about .title::after {
+    content: "Who i am ?"; 
+}
+
+.about .about-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.about .about-content .left{
+    width: 45%;
+}
+.about .about-content .left img {
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 6px;
+
+}
+
+.about .about-content .right{
+    width: 55%;
+}
+
+.about .about-content .right .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.about .about-content .right .text span{
+    color: rgba(247, 139, 16, 0.966);
+    
+}
+
+/* Skills and Project showcase style*/
+.skills{
+    color: white;
+
+}
+.skills .title::after{
+    content:"what i provide";
+    color: white;
+
+
+}
+
+.skills .title::before{
+    background: #240b36;
+}
+
+.skills .skill-content .card{
+    width: calc(33% - 20px);
+    background: #240b36;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 25px;
+    cursor: pointer;
+    border: solid;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: justify;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.skills .skill-content .card i{
+    font-size: 50px;
+    color:#f10216;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills .skill-content .card .text{
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    margin: 0px auto;
+    
+}
+
+.skills .skill-content .card .box{
+    transition: all 0.3s ease;
+}
+.skills .skill-content .card:hover{
+    background: #000;
+}
+.skills .skill-content .card:hover .box{
+    transform: scale(1.05s);
+}
+
+.contact .contact-content .column{
+    width: calc(50% - 30px);
+}
+
+/*Contact Section Styling*/
+
+.sp{
+    justify-content: space-between;
+    color: black;
+}
+.contact{
+    background: linear-gradient(245.59deg, #1d1d1d 0%, red);
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+
+.contact-text h4{
+    padding-left: 30px;
+    margin: 18px 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.contact-text h2{
+    padding-left: 30px;
+    font-size: 30px;
+    line-height: 1;
+}
+.contact-text p{
+    font-size: 20px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.list{
+    list-style: none;
+}
+.list a{
+    text-decoration: none;
+    color: white;
+    transition: all 0.55s ease-in;
+}
+.list a:hover{
+    color: #000000;
+    transition: all 0.55s ease-in;
+}
+
+.contact-form{
+    position: relative;
+    justify-content: space-between;
+    left: 50%;
+    
+    
+}
+.contact-form form input, form textarea{
+    
+    width: 100%;
+    padding: 14px;
+    border-radius: 25px;
+    background: black;
+    color: white;
+}
+
+.resume .contact-text a {
+    display: inline-block;
+    background: #aa076b;
+    color: white;
+    font-size: 20px;
+    padding: 1px 30px ;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid rgb(22, 68, 4);
+    transition: all 0.3s ease;
+}
+
+.resume .contact-text a:hover{
+    color: rgb(217, 220, 20);
+    background: none;
+}
+@media (max-width: 1535px){
+    header{
+        padding: 15px 3%;
+        transition: 0.2s;
+
+    }
+    .icons{
+        padding:0 3%;
+        transition: 0.2s;
+    }
+    .scroll-down{
+        right: 3%;
+        transition: 0.2s;
+    }
+}
+
+@media (max-width: 1460px){
+    section{
+        padding: 0 12%;
+        transition: .2s;
+    }
+}
+
+@media (max-width: 1340px){
+    .about .about-content .left img {
+        height: 350px;
+        width: 350px;
+    
+    }
+    .hero-img img{
+        width:100%;
+        height: auto;
+    }
+    .hero-text h1{
+        font-size: 75px;
+        margin: 0 0 30px;
+    }
+    .hero-text h5{
+        margin-bottom: 25px;
+    }
+}
+@media (max-width: 1195px){
+    section{
+        padding: 0 3%;
+        transition: .2s;
+    }
+    .hero-text{
+        padding-top: 115px;
+    }
+    .hero-img{
+        text-align: center;
+    }
+    .hero-img img{
+        width:560px;
+        height: auto;
+    }
+    .hero{
+        height: 100%;
+        gap: 1rem;
+        grid-template-columns: 1fr ;
+    }
+    .icons{
+        display: none;
+    }
+    .scroll-down{
+        display: none;
+    }
+}
+
+/* Contact Section Styling*/
+
+.contact .title::after{
+    content: "get in touch";
+}
+
+@media (max-width: 990px){
+    #menu-icon{
+        display: block;
+    }
+    .navlist{
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 300px;
+        height: 40vh;
+        background: #aa076b;
+        
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 50px 20px;
+        transition: all 0.55s ease;
+    }
+    .navlist a{
+        display: block;
+        margin-left: 0;
+        margin: 7px 0;
+    }
+    .navlist.open{
+        right:0;
+
+    }
+}
+
+@media (max-width: 680px){
+    .hero-img img{
+        width: 100%;
+        height: auto;
+    }
+}
+
